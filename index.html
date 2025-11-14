@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with APIs</title>
+</head>
+<body>
+  <img src="#" style="margin: 0 auto; display:block;">
+</body>
+<script>
+  const img = document.querySelector("img");
+
+  fetch(
+    "https://api.giphy.com/v1/gifs/translate?api_key=p5ENc6JElwzTQ1MZ3uPmBUsI9ZlraLpM&s=the_owl_house",
+  )
+    .then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      img.src = response.data.images.original.url;
+    });
+</script>
+</html>
