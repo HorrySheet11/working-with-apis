@@ -1,4 +1,22 @@
-img,button{
+@import url('https://use.typekit.net/oov2wcw.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-family: century-gothic, sans-serif;
+}
+
+img,button,label {
     display: block;
     margin: auto;
+    text-align: center;
+}
+
+button{
+    margin:10px auto;
 }
